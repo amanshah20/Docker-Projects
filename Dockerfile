@@ -1,6 +1,5 @@
-
 FROM openjdk:17-jdk-alpine
 WORKDIR /app
-COPY Helloworld.java /app/Helloworld.java
+COPY Helloworld.java /app/
 RUN javac Helloworld.java
 CMD ["java","Helloworld"]
